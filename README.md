@@ -36,9 +36,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # messenger-clone
 This is a real-time messenger clone.
+
 Frontend Development: I leveraged React as the primary library to create the user interface. 
+
 Framework: Next.js 13 as the development framework. 
+
 Authentication: Using React for authentication mechanisms ensured that only authorized users could access the platform and their respective chat rooms.
+
 Database: The robust combination of Prisma as an ORM and MongoDB as the database was implemented. 
+
 Styling: Tailwind CSS for styling the application.
+
 Real-time Communication: To ensure real-time communication, Pusher was itergated.
