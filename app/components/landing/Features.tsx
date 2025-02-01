@@ -21,7 +21,7 @@ const features = [
   {
     name: "Image Sharing",
     description:
-      "Share images and media files seamlessly in your conversations.",
+      "Share images and media files seamlessly in your conversations, with a focus on privacy and security.",
     icon: PhotoIcon,
   },
   {
@@ -53,7 +53,7 @@ const Features = () => {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             {features.map((feature) => (
               <div key={feature.name} className="relative group">
-                <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 hover:bg-indigo-50">
                   <div className="flex items-center space-x-4">
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
