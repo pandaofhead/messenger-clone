@@ -1,49 +1,100 @@
-# Messenger-Clone
-Project Link: https://messenger-clone-hongjin.vercel.app/
+# Real-Time Messenger Application
 
-This is a real-time messenger clone.
+A full-featured real-time messaging platform built with Next.js 13, demonstrating modern web development practices and real-time communication implementation.
 
-Frontend Development: I leveraged React as the primary library to create the user interface. 
+Live Demo: https://messenger-clone-hongjin.vercel.app/
 
-Framework: Next.js 13 as the development framework. 
+## Tech Stack
 
-Authentication: Using React for authentication mechanisms ensured that only authorized users could access the platform and their respective chat rooms.
+### Frontend
 
-Database: The robust combination of Prisma as an ORM and MongoDB as the database was implemented. 
+- Next.js 13 (App Router)
+- TypeScript
+- TailwindCSS
+- Headless UI
+- React Hook Form
 
-Styling: Tailwind CSS for styling the application.
+### Backend
 
-Real-time Communication: To ensure real-time communication, Pusher was itergated.
+- Next.js API Routes
+- Prisma ORM
+- MongoDB
+- NextAuth.js
+- Pusher
 
-# Login
+### Cloud Services
+
+- Vercel (Hosting)
+- MongoDB Atlas
+- Cloudinary (Image Upload)
+
+## Key Features
+
+- 💬 Real-time messaging
+- 👥 Group chat support
+- 🔐 Authentication (Email, Google, GitHub)
+- 📸 Image upload and sharing
+- ✅ Message read receipts
+- 🟢 Online/offline status
+- 👤 User profile customization
+- 📱 Responsive design
+
+### Login
+
 Google and Github accounts supported
 ![My Image](/app/Login.png)
 
-# Individual and Gruop Chat
+### Individual and Gruop Chat
 
 ![My Image](/app/Individual.png)
 ![My Image](/app/Group.png)
 
-# Profile Editing
+### Profile Editing
+
 ![My Image](/app/Profile.png)
+
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 16+
+- MongoDB Atlas account
+- Pusher account
+- Cloudinary account
+
+### Environment Setup
+
+Create a `.env` file in the root directory with and replace the credentials with your own.
+
+```env
+DATABASE_URL=
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+GITHUB_ID=
+GITHUB_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+PUSHER_APP_ID=
+NEXT_PUBLIC_PUSHER_APP_KEY=
+PUSHER_SECRET=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+```
+
+### Installation
+
+```bash
+npm install
+```
+
+### Setup database
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-
